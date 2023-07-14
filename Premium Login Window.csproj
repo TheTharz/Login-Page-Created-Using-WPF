@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Premium_Login_Window</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Images\bgimage.jpg" />
+		<None Remove="View\bgimage.jpg" />
+		<None Remove="View\key-icon.png" />
+		<None Remove="View\logo.png" />
+		<None Remove="View\user-icon.png" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\bgimage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\bgimage.jpg" />
+    <Resource Include="View\key-icon.png" />
+    <Resource Include="View\logo.png" />
+    <Resource Include="View\user-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+</Project>
